@@ -71,8 +71,8 @@ export const authService = {
   loginAdmin: async (): Promise<LoginResponse> => {
     try {
       const response = await api.post('/auth/login', {
-        username: 'thanhvv1@salasoft.vn', // Thay thế bằng tài khoản admin thực tế
-        password: '125250aA' // Thay thế bằng mật khẩu admin thực tế
+        username: 'for-delete-account@mim-corp.com', // Thay thế bằng tài khoản admin thực tế
+        password: 'fordeleteaccount@mim' // Thay thế bằng mật khẩu admin thực tế
       });
       
       const { token, refreshToken } = response.data;
